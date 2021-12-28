@@ -48,7 +48,7 @@ def ok_close():
 
 def button_exit_program():
     exit()
-    
+# ------------------------------------------
 # ------------------------------------------
 
 # Initialize QuykGui
@@ -77,4 +77,28 @@ window['main'].new_btn('Exit Program', on_click_callback=button_exit_program,id=
 # Set our main window, to the Main Window
 q.set_main_window(window['main'])
 
+```
+
+### Accessing the tkinter object
+```python
+from QuykGui import qgui
+
+# Initialize QuykGui
+q = qgui()
+
+# Create a main window
+window = {
+    'main': q.new_window('Main Window'),
+}
+
+# Option 1 - storing to local variable
+text_element = window['main'].new_text('this is some text on the interface.')
+tkinter_obj = text_element.object
+
+# Option 2 - finding by Id
+window['main'].new_text('this is some text on the interface.', id='text_element')
+tkinter_obj = window['main'].get_by_id('text_element').object
+
+# Set our main window, to the Main Window
+q.set_main_window(window['main'])
 ```
