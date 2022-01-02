@@ -79,7 +79,7 @@ q.set_main_window(window['main'])
 
 ```
 
-### Accessing the tkinter object
+### Example: Accessing a tkinter object
 ```python
 from QuykGui import qgui
 
