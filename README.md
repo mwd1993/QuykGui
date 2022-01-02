@@ -9,7 +9,7 @@ Think of QuykGui as a higher level way to make interfaces while still allowing f
 
 ![](https://github.com/mwd1993/QuykGui/blob/main/quykgui%20example.gif)
 
-### The code behind the GIF Example
+### Example 1: The code behind the GIF Example
 
 ```python
 from QuykGui import qgui
@@ -79,7 +79,7 @@ q.set_main_window(window['main'])
 
 ```
 
-### Example: Accessing a tkinter object
+### Example 2: Accessing a tkinter object
 ```python
 from QuykGui import qgui
 
